@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Ej3 maquetación Formulario</title>
+    </head>
+
+    <body>
+        <form>
+            <caption>
+                <h1>Formulario de registro</h1>
+            </caption>
+            <!--Nombre y apellidos-->
+            <fieldset>
+                <div class="title">
+                    <label >Nombre y apellidos</label>
+                </div>
+                <div>
+                    <ul>
+                        <li><input type="text" id="name" name="name" value=""></li>
+                        <li>
+                            <label for="name">Nombre</label>
+                        </li>
+                        <li><input type="text" id="firstName" name="firstName" value=""></li>
+                        <li>
+                            <label for="firstName">Primer apellido</label>
+                        </li>
+                        <li><input type="text" id="lastName" name="lastName" value=""></li>
+                        <li>
+                            <label for="lastName">Segundo apellido</label>
+                        </li>
+                    </ul>
+                </div>
+            </fieldset>
+            <!--Dirección-->
+            <fieldset>
+                <div class="title">
+                    <label class="title">Dirección</label>
+                </div>
+                <div>
+                    <ul>
+                        <li><input type="text" id="address" name="address" value=""></li>
+                        <li>
+                            <label for="address">Calle, número, piso, puerta</label>
+                        </li>
+                        <li>
+                            <input type="text" id="postalCode" name="postalCode" value="">
+                            <input type="text" id="town" name="town" value="">
+                        </li>
+                        <li>
+                            <label class="postalCode" for="postalCode">Código postal</label>
+                            <label class="town" for="town">Municipio</label>
+                        </li>
+                        <li>
+
+                            <select id="province" name="provincia">
+                                <option value=""></option>
+                                <option value="province1">Provincia 1</option>
+                                <option value="province2">Provincia 2</option>
+                                <option value="province3">Provincia 3</option>
+                            </select>
+
+                            <select id="country" name="country">
+                                <option value=""></option>
+                                <option value="country1">País 1</option>
+                                <option value="country2">País 2</option>
+                                <option value="country3">País 3</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label class="province" for="province">Provincia</label>
+                            <label for="country">País</label>
+                        </li>
+                    </ul>
+                </div>
+            </fieldset>
+            <!--Email-->
+            <fieldset>
+                <div class="title">
+                    <label for="email">Email</label>
+                </div>
+                <div>
+                    <input id="email" name="email" value="">
+                </div>
+            </fieldset>
+            <!--Teléfono-->
+            <fieldset>
+                <div class="title">
+                    <label for="phone">Teléfono</label>
+                </div>
+                <div>
+                    <ul>
+                        <li style="columns: 2;">
+                            <input id="phone" name="phone" value=""/>
+                            <input id="mobile" name="mobile" value=""/>
+                        </li>
+                        <li style="columns: 2;">
+                            <label class="phone" for="phone">Fijo</label>
+                            <label class="mobile"for="mobile">Móvil</label>
+                        </li>
+                    </ul>
+                </div>
+            </fieldset>
+            <!--Botón-->
+            <fieldset class="register">
+                <button type="submit" value="Registrarse">Registrarse</button>
+            </fieldset>
+        </form>
+    </body>
+
+</html>
