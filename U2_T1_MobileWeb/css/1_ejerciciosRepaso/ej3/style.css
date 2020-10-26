@@ -53,11 +53,11 @@ li label {
     width: 50%;
 }
 
-#postalCode, #province {
+#postalCode, #province, #phone {
     margin-right: 25%;
     width: 25%;
 } 
-.postalCode, .province {
+.postalCode, .province, .phone {
     display: inline-block;
     width: 50%;
 }

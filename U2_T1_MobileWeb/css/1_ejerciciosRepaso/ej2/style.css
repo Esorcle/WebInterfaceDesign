@@ -8,6 +8,10 @@ body {
 }
 
 header {
+    background-color:rgb(94, 122, 153);
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    color: white;
     text-align: center;
 }
 
