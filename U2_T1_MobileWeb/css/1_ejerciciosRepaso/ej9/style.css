@@ -1,0 +1,36 @@
+/* Lo aplica al header a pesar del not ?¿?¿?¿?¿ */
+/* :not(header) */
+body > h1, body > h2, body > ul{
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+}
+
+body > h1 {
+    background-color: #BFBFBF;
+    color: rgb(42, 42, 119);
+    font-family: Cambria,Times,serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    /* font-variant: small-caps; */
+    text-transform: uppercase;
+    word-spacing: 1.5rem;
+  }
+
+body > h2 {
+    font-family: Cambria,Times,serif;
+    color: rgb(95, 21, 21);
+    font-size: 1rem;
+    letter-spacing: 0.5rem;
+    /* font-variant: small-caps; */
+    text-transform: uppercase;
+  }
+
+li {
+    font-style: italic;
+    font-weight: bold;
+  }
+
+strong {
+    font-style: normal;
+    font-variant: small-caps;
+  }

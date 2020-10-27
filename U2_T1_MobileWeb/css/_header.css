@@ -1,4 +1,8 @@
+* {
+    box-sizing: border-box;
+}
 header {
+    font-family: 'Baloo 2';
     background-color:rgb(94, 122, 153);
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;

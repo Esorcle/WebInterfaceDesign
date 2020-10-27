@@ -5,7 +5,7 @@ ul {
     margin: 0px;
 }
 /* Cuerpo */
-body {
+body > div{
 background-color: rgb(207, 205, 205);
 }
 

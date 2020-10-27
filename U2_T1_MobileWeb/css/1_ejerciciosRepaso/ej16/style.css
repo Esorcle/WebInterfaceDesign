@@ -1,0 +1,11 @@
+
+#galeria {
+    margin: 0 auto;
+    max-width: 50%;
+}
+#galeria img {
+    border: 1px solid gainsboro;
+    float: left;
+    margin: 2%;
+    padding: 1%;
+}

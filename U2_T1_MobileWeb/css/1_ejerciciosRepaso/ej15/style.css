@@ -1,0 +1,15 @@
+ul li:nth-child(1), li:nth-child(5) {
+    color: blue;
+}
+ ul li:nth-child(1) {
+     font-size: xx-small;
+ }
+ ul li:nth-child(2) {
+    font-size: x-small;
+}
+ul li:nth-child(4) {
+    font-size: larger;
+}
+ul li:nth-child(5) {
+    font-size: x-large;
+}

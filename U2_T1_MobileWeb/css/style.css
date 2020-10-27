@@ -17,7 +17,7 @@ a {
 }
 /* Estilos generales */
 * {
-    color: rgb(66, 82, 102);
+    color: rgb(46, 59, 74);
     box-sizing: border-box;
     font-family: "Baloo 2";
 }
@@ -145,7 +145,7 @@ tr td:nth-last-child(1) {
 
 /* Trabajos */
 #trabajos a {
-    color:rgb(79, 73, 73);
+    color:rgb(56, 48, 48);
     padding-right: 1%;
     padding-left: 1%;
 }
