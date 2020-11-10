@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilo tipografía externa -->
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet">
+    <!-- Estilos Fontawesome-->
+    <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>CV</title>
+</head>
+
+<body>
+    <!--====================NAVIGATION======================-->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="works">Works</a></li>
+                <li><a href="contact"></a>Contact</li>
+            </ul>
+        </nav>
+
+        <aside class="nameAside">
+            <h4 class="globo">Hello I'm</h4>
+            <h1>Estefanía Ortiz</h1>
+            <h3 class="dev">Develope Web</h3>
+        </aside>
+
+        <aside class="contactAside">
+            <ul>
+                <li><i class="fa fa-phone-square" aria-hidden="true"></i>633 32 75 08</li>
+                <li><a href="https://linkedin.com/in/estefaniaortizcle" target="blank"><i class="fa fa-linkedin-square"
+                            aria-hidden="true"></i>www.linkedin.com</a></li>
+                <li><a href="https://github.com/Esorcle" target="blank"><i class="fa fa-github"
+                            aria-hidden="true"></i>https://github.com/Esorcle</a></li>
+                <li><a href="mailto:estefaniaortizcle@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>
+                        estefaniaortizcle@gmail.com</a></li>
+            </ul>
+    </header>
+    <!--====================ABOUT ME======================-->
+    <article>
+        <h3>About me</h3>
+        <img src="img/inicio/_DSC7029.JPG">
+        <section class="parrafo">
+            <p>Futura desarrolladora web.</p>
+            <p>Me apasiona el back-end. Desfrizar y encontrar los caminos a los problemas me
+                encanta, intentando ser organizada, aunque a veces es díficil <i class="fa fa-smile-o"
+                    aria-hidden="true"></i></p>
+            <p>Con años de experiencia en diferentes áreas, sé que soy adaptable, que
+                aprendo rápido y que soy una estupenda compañera.</p>
+            <p>Siempre saco lo mejor de mí, y de mis compañeros.</p>
+        </section>
+        <section class="cuadros">
+            <p>Java</p>
+            <p>html</p>
+            <p>css</p>
+            <p>JavaScript</p>
+            <button onclick="downloadPdf()">Download CV<i class="fa fa-download" aria-hidden="true"></i></button>
+        </section>
+        <section>
+            <ul>
+                <li>
+                    <div class="circle">
+                        <svg viewBox="0 0 100 100">
+                            <path d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95" stroke="#eee"
+                                stroke-width="5" fill-opacity="0"></path>
+                            <path d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95" stroke="#555"
+                                stroke-width="5" fill-opacity="0"
+                                style="stroke-dasharray: 298.493px, 298.493px; stroke-dashoffset: 14.9247px;"></path>
+                        </svg>
+                        <p class="circle-text"
+                            style="position:absolute; top: 50%; left: 50%; padding: 0px; margi...x; transform:translate(-50%,-50%); color: rgb(85, 85, 85);">
+                            95%</p>
+                    </div>
+                    <div class="circle-name">Communication</div>
+                </li>
+                <li>
+                    <div class="circle">
+                        <svg viewBox="0 0 100 100">
+                            <path d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95" stroke="#eee"
+                                stroke-wisth="5" fill-opacity="0"></path>
+                            <path d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95" stroke="#555"
+                                stroke-width="5" fill-opacity="0"
+                                style="stroke-dasharray: 298.493px, 298.493px; stroke-dashoffset: 134.322px;"></path>
+                        </svg>
+                        <p class="circle-text"
+                            style="position:absolute; top: 50%; left: 50%; padding: 0px; margi...x; transform:translate(-50%,-50%); color: rgb(85, 85, 85);">
+                            55%</p>
+                    </div>
+                    <div class="circle-name">Team Work</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="circle">
+                        <svg viewBox="0 0 100 100">
+                            <path d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95" stroke="#eee"
+                                stroke-wisth="5" fill-opacity="0"></path>
+                            <path d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95" stroke="#555"
+                                stroke-width="5" fill-opacity="0"
+                                style="stroke-dasharray: 298.493px, 298.493px; stroke-dashoffset: 41.7890px;"></path>
+                        </svg>
+                        <p class="circle-text"
+                            style="position:absolute; top: 50%; left: 50%; padding: 0px; margi...x; transform:translate(-50%,-50%); color: rgb(85, 85, 85);">
+                            86%</p>
+                    </div>
+                    <div class="circle-name">Project Management</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="circle">
+                        <svg viewBox="0 0 100 100">
+                            <path d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95" stroke="#eee"
+                                stroke-wisth="5" fill-opacity="0"></path>
+                            <path d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95" stroke="#555"
+                                stroke-width="5" fill-opacity="0"
+                                style="stroke-dasharray: 298.493px, 298.493px; stroke-dashoffset: 119.397px;"></path>
+                        </svg>
+                        <p class="circle-text"
+                            style="position:absolute; top: 50%; left: 50%; padding: 0px; margi...x; transform:translate(-50%,-50%); color: rgb(85, 85, 85);">
+                            60%</p>
+                    </div>
+                    <div class="circle-name">Creativity</div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </article>
+    <!--====================WORKS======================-->
+    <article>
+        <h3>Works</h3>
+    </article>
+</body>
+
+</html>
