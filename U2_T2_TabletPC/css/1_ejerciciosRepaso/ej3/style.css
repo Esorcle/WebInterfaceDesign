@@ -1,0 +1,81 @@
+/* Reseteo */
+ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+/* Cuerpo */
+body > div{
+background-color: rgb(207, 205, 205);
+}
+
+form {
+    background-color: white;
+    margin: 0px auto;
+    padding: 1%;
+    width: 80%;
+}
+
+/* Cabecera formulario */
+h1 {
+    height: 50px;
+}
+
+/* Secciones formulario */
+fieldset:hover {
+    background-color: rgb(230, 200, 162);
+}
+fieldset {
+     border: none;
+     border-top: gray solid 2px;
+     padding: 1%;
+     padding-bottom: 2%;
+ }
+fieldset div {
+    float: left;  
+    width: 50%;
+}
+
+fieldset div:nth-child(1) {
+    font-weight: bolder;
+    text-align: right;
+    margin-right: 1%;
+    width: 20%;
+}
+
+/* Lista */
+li label {
+    font-size: small;
+}
+
+/* Input */
+#firstName, #lastName, #address {
+    width: 50%;
+}
+
+#postalCode, #province, #phone {
+    margin-right: 25%;
+    width: 25%;
+} 
+.postalCode, .province, .phone {
+    display: inline-block;
+    width: 50%;
+}
+input, select {
+    border: none;
+    border-bottom: black solid 2px;
+}
+input:hover {
+    border: red solid 1px;
+}
+
+/* Botón */
+.register {
+    text-align: right;
+}
+.register button {
+    font-size: 1vw;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}

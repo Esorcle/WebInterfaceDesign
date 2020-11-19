@@ -1,0 +1,1279 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* font-family: 'Roboto', sans-serif */
+* {
+    box-sizing: border-box;
+}
+
+.dark-bg {
+    background-color: #202026;
+}
+
+.dark-vertion div {
+    color: #fff;
+}
+
+body {
+    background-color: #100e17;
+    color: #999999;
+    font-family: "Baloo 2";
+    font-size: 14px;
+    font-style: none;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+    position: relative;
+    text-align: left;
+    opacity: 0.9;
+    overflow-x: hidden !important;
+}
+
+header,
+section,
+footer {
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+a {
+    color: #fff;
+    text-decoration: none !important;
+    cursor: pointer;
+    padding: 0px;
+    background-color: transparent;
+    transition: color 0.3s ease;
+    opacity: 0.9;
+}
+
+p {
+    margin-top: 0;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+h3, .h3 {
+    color: #fff;
+    font-weight: bold;
+}
+
+h4 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: bold;
+    line-height: 1.2;
+    font-size: 1.5rem;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.section-separator {
+    padding: 60px 0;
+    padding-top: 100px;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    color: #fff;
+}
+
+.img-color-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+/*
+  ===============
+      Header
+  ==============
+  */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+header {
+    padding: 20px 0;
+}
+
+
+
+/*
+  ===============
+      Home
+  ==============
+  */
+
+.mh-home {
+    background-image: url(../img/photoBack.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.img-foverlay {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/*
+  ===============
+      Photo
+  ==============
+  */
+.img-border {
+    border: 20px solid rgba(0, 0, 0, 0.7);
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    background-image: url(../img/_DSC6961.jpg);
+    background-position: center center;
+    background-size: cover;
+    margin: 0 auto;
+    text-align: center;
+    float: none;
+
+}
+
+/*
+  ===============
+      Info
+  ==============
+  */
+
+.mh-promo span {
+    background-color: #0bceaf;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+}
+
+.mh-home .mh-header-info h4 {
+    margin-bottom: 30px;
+}
+
+.mh-home .mh-header-info {
+    padding-top: 100px;
+}
+
+.mh-header-info ul {
+    margin-top: 20px;
+}
+
+.mh-header-info ul li {
+    margin: 10px 0;
+}
+
+.mh-header-info ul li .fa {
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.mh-home .mh-header-info ul li:hover .fa {
+    color: #0bceaf;
+}
+
+.mh-home .mh-header-info .social-icon {
+    margin-top: 0;
+}
+
+.social-icon {
+    display: inline-block;
+}
+
+.social-icon li {
+    float: left;
+    margin-bottom: 0px;
+    margin-right: 8px;
+}
+.social-icon li a {
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.mh-home .mh-header-info .social-icon li a {
+    font-size: 25px;
+    text-align: center;
+    padding: 0;
+    margin-right: 0;
+    border-radius: 50%;
+}
+
+.mh-home .mh-header-info .social-icon li .fa {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 4px 14px;
+    margin-right: 10;
+    transition: 0.3s;
+    border-radius: 3px;
+}
+
+.social-icon li .fa:hover {
+    -webkit-transition: 0.3s;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+/*
+  ===============
+      About me generic
+  ==============
+  */
+.mh-about-inner {
+    padding-left: 50px;
+}
+
+.mh-about-inner h2 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.mh-about-inner p {
+    margin-bottom: 30px;
+}
+
+.mh-about-tag {
+    word-break: break-all;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.mh-about-tag ul li {
+    margin: 0px 6px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 4px 0px;
+    display: inline-block;
+}
+
+.mh-about-tag ul li span {
+    border: 1px solid #0bceaf;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: color 0.3 ease;
+    padding: 8px 30px;
+    font-weight: bold;
+    border-radius: 20px;
+    outline: 0;
+    background-color: #0bceaf;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.button:last-child {
+    margin-right: 0px !important;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+/*
+  ===============
+      About me Technical Skill generic
+  ==============
+  */
+.mh-skills .mh-professional-skill {
+    padding-right: 60px;
+}
+
+.mh-professional-skill h3 {
+    margin-top: 0;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.candidatos {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.candidatos .parcial {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.candidatos .parcial .info {
+    position: relative;
+}
+
+.candidatos .parcial .info .nome {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 15px;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+.candidatos .parcial .info .percentagem-num {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.candidatos .parcial .progressBar {
+    background-color: rgba(199, 198, 198, 0.6);
+    position: relative;
+    width: 100%;
+    height: 7px;
+    margin: 30px 0 2px;
+    border-radius: 10px;
+}
+
+.candidatos .parcial .percentagem {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 7px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #0bceaf;
+    transition: 3s all;
+}
+
+/*
+  ===============
+      About me Proffesional Skills generic
+  ==============
+  */
+
+.mh-professional-skills h3 {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.mh-professional-progress li {
+    display: inline-block;
+    margin: 0 auto;
+    float: none;
+    width: 48%;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+
+    /* width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff ;
+    box-shadow: 0 30px 60px rgba(0,0,0,.2); */
+}
+
+/* .mh-progress-circle {
+    position: relative;
+    width: 150px;
+    height: 150px;
+} */
+
+.mh-progress-circle svg {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    z-index: 1000;
+}
+
+.mh-progress-circle svg circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke-width: 5;
+    stroke: rgba(199, 198, 198, 0.6);
+    transform: translate(5px, 5px);
+    stroke-linecap: round;
+}
+
+.mh-progress-circle svg circle:nth-child(2) {
+    stroke-dasharray: 314;
+    stroke-dashoffset: 314;
+}
+
+.mh-professional-progress li:nth-child(1) svg circle:nth-child(2) {
+    stroke-dashoffset: 62.8;
+    /* calc(440 - (440 * 80) / 100); */
+    stroke: #0bceaf;
+}
+
+.mh-professional-progress li:nth-child(2) svg circle:nth-child(2) {
+    stroke-dashoffset: 15.7;
+    /* calc(440 - (440 * 95) / 100); */
+    stroke: #0bceaf;
+}
+
+.mh-professional-progress li:nth-child(3) svg circle:nth-child(2) {
+    stroke-dashoffset: 125.6;
+    /* calc(440 - (440 * 60) / 100); */
+    stroke: #0bceaf;
+}
+
+.mh-professional-progress li:nth-child(4) svg circle:nth-child(2) {
+    stroke-dashoffset: 78.5;
+    /* calc(440 - (440 * 75) / 100); */
+    stroke: #0bceaf;
+}
+
+.progressbar-text {
+    position: absolute;
+    top: 13px;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(109, 108, 108);
+    transition: 0.5s;
+    /* 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     */
+}
+
+.progressbar-text span {
+    font-size: 18px;
+}
+
+.mh-progress:hover .progressbar-text {
+    color: #fff;
+    transition: 0.5s;
+}
+
+.mh-progress:hover .progressbar-text,
+.mh-progress:hover .pr-skill-name {
+    color: #fff;
+    transition: 0.5s;
+}
+
+.pr-skill-name {
+    padding: 10px 0 0;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+}
+
+/*
+  ===============
+      Works generic
+  ==============
+  */
+.mh-experience {
+    background-image: url(../img/photoBack.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.mh-experience .row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.mh-education {
+    padding-right: 30px;
+}
+
+.mh-experience h3 {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.mh-experience .mh-education-deatils .mh-education-item {
+    box-shadow: -1rem 0 3rem #000;
+    margin-bottom: 30px;
+    padding: 26px 30px;
+    border-radius: 4px;
+}
+
+.mh-experience .mh-education-deatils .mh-education-item h4 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.mh-experience .mh-education-deatils .mh-education-item h4 a {
+    font-style: italic;
+    margin-left: 4px;
+    color: #0bceaf;
+}
+
+.mh-experience .mh-education-deatils .mh-education-item .mh-eduyear {
+    margin: 10px 0;
+    color: #0bceaf;
+}
+
+.mh-experience .mh-education-deatils .mh-education-item p {
+    font-size: 14px;
+    line-height: 23px;
+    margin-bottom: 0;
+}
+
+/*
+  ===============
+      Footer generic
+  ==============
+  */
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.section-title h3 {
+    margin-bottom: 60px;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.map-image {
+    background-image: url(../img//map-color-overlay.png);
+
+}
+
+.image-bg {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+
+}
+
+.mh-footer .row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+.mh-footer-3 .mh-footer-address .mh-address-footer-item {
+    padding: 10px 30px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.mh-footer-address {
+    margin-bottom: 60px;
+}
+
+.mh-footer-address .mh-address-footer-item {
+    border-radius: 4px;
+    box-shadow: -1rem 0 3rem #000;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.mh-footer-3 .mh-footer-address .mh-address-footer-item h4 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.mh-footer-address .mh-address-footer-item address {
+    margin-bottom: 0;
+    font-style: normal;
+    line-height: inherit;
+}
+
+.mh-footer-address .mh-address-footer-item .each-icon {
+    margin-bottom: 30px;
+}
+
+.mh-footer-address .mh-address-footer-item .each-icon .fa {
+    text-align: center;
+    border: 1px solid #0bceaf;
+    border-radius: 50%;
+    font-size: 20px;
+}
+.mh-footer-3 .mh-footer-address .mh-address-footer-item .each-info {
+    padding-left: 40px;
+    text-align: left;
+}
+.text-center {
+    text-align: center !important;
+}
+
+#msgSubmit {
+    margin-top: 20px;
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+input,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    overflow: visible;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
+    background-color: transparent;
+    border-color: transparent;
+    margin-bottom: 20px;
+    height: 50px;
+    line-height: 50px;
+
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
+
+.mh-footer .contact-message {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 20px;
+    outline: 0;
+    box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+.mh-footer .contact-message:focus {
+    box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+.btn {
+    transition: color 0.3s ease;
+    padding: 8px 30px;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+    white-space: nowrap;
+    user-select: none;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.btn-fill {
+    background-color: #0bceaf;
+    color: #fff;
+    margin-right: 0px !important;
+    opacity: 0.65;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+
+}
+
+.mh-copyright {
+    margin-top: 60px;
+}
+
+.mh-footer ul li:hover .fa {
+    color: #0bceaf;
+}
+
+
+
+@media screen and (max-width: 420px) {
+    .img-border {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+
+    /*
+  ===============
+      General min 576px
+  ==============
+  */
+    .container {
+        max-width: 560px;
+    }
+
+    /*
+  ===============
+      Footer min 576px
+  ==============
+  */
+
+    .tablet-all {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    /*
+  ===============
+      General 576px
+  ==============
+  */
+    .mobile {
+        position: relative;
+        width: 100%;
+        min-width: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .section-separator {
+        padding: 30px 0;
+    }
+
+
+
+    /*
+  ===============
+      Home 576px
+  ==============
+  */
+
+    .mh-header-info {
+        padding: 0;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+
+
+    .social-icon {
+        display: inline-block;
+        margin: 0 auto;
+        float: none;
+        text-align: center;
+    }
+
+    .social-icon li {
+        display: inline-block;
+    }
+
+    .social-icon li a {
+        width: 30px;
+        height: 30px;
+        margin-right: 0;
+    }
+
+    /*
+  ===============
+      About me 576px
+  ==============
+  */
+    .mh-about {
+        margin-bottom: 60px;
+    }
+
+    .mh-about-inner {
+        padding-left: 5px;
+        text-align: center;
+        margin: 30px 15px;
+    }
+
+    /*
+  ===============
+      Professional Skill 576px
+  ==============
+  */
+    .mh-about .mh-professional-skill {
+        padding-left: 0;
+    }
+
+    /*
+  ===============
+    Works 576px
+  ==============
+  */
+    .mh-education {
+        margin-bottom: 30px;
+        padding-right: 0;
+    }
+
+    .mh-experience h3 {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    /*
+  ===============
+    footer 576px
+  ==============
+  */
+    .xs-no-padding {
+        padding: 0;
+    }
+
+    .mh-footer-3 .mh-footer-address .mh-address-footer-item {
+        display: block;
+        padding: 20px 0px;
+    }
+
+    .text-left.text-xs-center {
+        text-align: center;
+    }
+
+
+}
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .mh-home .home-padding {
+        padding: 150px 0;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    /*
+  ===============
+      About me max 768px
+  ==============
+  */
+    .mh-about-inner {
+        margin-top: 40px;
+    }
+    
+
+
+    /*
+  ===============
+      About me max Technical Skill 768
+  ==============
+  */
+
+    .mh-professional-skill h3 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    /*
+  ===============
+      About me max Proffesional Skills 768
+  ==============
+  */
+
+    .mh-professional-skills h3 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    /*
+  ===============
+      footer max 768
+  ==============
+  */
+    .mh-footer-address .mh-address-footer-item .each-icon .fa {
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+    }
+
+
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+
+    /*
+  ===============
+    Works 768px
+  ==============
+  */
+    .mh-education {
+        padding-right: 0;
+    }
+
+    /*
+  ===============
+    Works 768px
+  ==============
+  */
+
+    .mh-experience h3 {
+        margin-bottom: 30px;
+    }
+
+
+
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+    /*
+  ===============
+      General min 576 max 991px
+  ==============
+  */
+
+    .section-separator {
+        padding: 40px 0;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    .mobile {
+        position: relative;
+        width: 100%;
+        min-width: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .tablet {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    /*
+  ===============
+      Header min 576px max 991px
+  ==============
+  */
+
+
+    .mh-header-overlay {
+        position: fixed;
+        display: none;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 3;
+    }
+
+    .mh-header nav {
+        padding: 0;
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /*
+  ===============
+      Home min 576px max 991px
+  ==============
+  */
+    .vertical-middle-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .mh-home .mh-header-info {
+        padding: 0;
+    }
+
+    .mh-home .photo {
+        order: 2;
+    }
+
+    .mh-about .section-separator {
+        padding: 40px 0;
+    }
+    /*
+  ===============
+      Footer min 576px max 991px
+  ==============
+  */
+    .media {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .media-body{
+        flex: 1;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+
+    /*
+  ===============
+      General max 991px
+  ==============
+  */
+    /*
+  ===============
+      Header max 991px
+  ==============
+  */
+    .mobile-menu {
+        display: block;
+        width: 100%;
+        background-color: transparent;
+        width: 100%;
+        /*.mh-nav {
+            width: 100%;
+        }*/
+        position: relative;
+        margin: 0 auto;
+    }
+
+    /*Strip the ul of padding and list styling*/
+    .mobile-menu ul {
+        border: 0.15rem solid black;
+        margin: 0 auto;
+        text-align: right;
+        width: 100%;
+        position: absolute;
+        background-color: transparent;
+        /*Make dropdown links appear inline*/
+        margin-top: 1rem;
+        position: static;
+        display: none;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        font-weight: bolder;
+    }
+
+    .mobile-menu label {
+        float: right;
+    }
+
+    /*Create a horizontal list with spacing*/
+    .mobile-menu li {
+        display: inline-block;
+        /*Create vertical spacing*/
+        margin-bottom: 0;
+    }
+
+    /*Style for menu links*/
+    .mobile-menu li a {
+        display: block;
+        text-align: center;
+        text-transform: normal;
+        background-color: #202026;
+        padding: 10px 0;
+        -webkit-transition: all 0.4s ease 0s;
+        -moz-transition: all 0.4s ease 0s;
+        -ms-transition: all 0.4s ease 0s;
+        -o-transition: all 0.4s ease 0s;
+        transition: all 0.4s ease 0s;
+    }
+
+    /*Hover state for top level links*/
+    .mobile-menu li:hover a {
+        color: rgba(0, 0, 0, 0.5);
+        background-color: lightgray;
+    }
+
+    /*Hover state for dropdown links*/
+    .mobile-menu li:hover .mobile-menu ul a:hover {
+        color: lightgray;
+    }
+
+    /*Hide dropdown links until they are needed*/
+    .mobile-menu li ul {
+        display: none;
+    }
+
+    /*Make all menu links full width*/
+    .mobile-menu ul li,
+    .mobile-menu li a {
+        width: 100%;
+    }
+
+    /*Hide checkbox*/
+    .mobile-menu input[type="checkbox"] {
+        display: none;
+    }
+
+    /*Show menu when invisible checkbox is checked*/
+    .mobile-menu input[type="checkbox"]:checked~#menu {
+        display: block;
+    }
+
+    /*
+  ===============
+      Home max 991px
+  ==============
+  */
+
+
+    .mh-home .home-padding {
+        padding: 100px 0;
+    }
+
+    h1 {
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 54px;
+    }
+
+    .mh-home .mh-header-info h4 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+    address {
+        display: inline;
+    }
+
+    .mh-promo {
+        margin-bottom: 20px;
+    }
+
+    /*
+  ===============
+      About me max 991px
+  ==============
+  */
+    .mh-about-inner {
+        padding-left: 5px;
+    }
+
+
+    /*
+  ===============
+      About me max  Technical Skill 991px
+  ==============
+  */
+    .mh-skills .mh-professional-skill {
+        padding-right: 0;
+    }
+
+    /*
+  ===============
+      About me max  Proffesional Skills 991px
+  ==============
+  */
+    .mh-professional-skills {
+        padding-left: 0;
+    }
+
+    .mh-professional-skills {
+        display: none;
+
+    }
+
+    /*
+  ===============
+      Footer max  991px
+  ==============
+  */
+
+    .mh-footer-address .mh-address-footer-item .each-icon .fa {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+
+    .mh-footer-3 .mh-footer-address .mh-address-footer-item .each-info {
+        padding-left: 20px;
+    }
+
+}
+
+
+@media screen and (min-width: 992px) {
+
+    .container {
+        max-width: 960px;
+    }
+
+    .row {
+        display: grid;
+        
+    }
+
+
+}
+
+/* @media screen and (min-width: 991px) and (max-width: 998px) {
+
+
+@media screen and (max-width: 998px) {}*/

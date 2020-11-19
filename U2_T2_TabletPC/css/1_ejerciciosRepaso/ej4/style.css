@@ -1,0 +1,26 @@
+/* Estado normal */
+a {
+    color: red;
+    text-decoration: none;
+}
+/* Encima */
+a:hover {
+    background-color: red;
+    color: white;
+    text-decoration: underline;
+}
+/* Mientras clic */
+a:active {
+    background-color: white;
+    color: orange;
+    text-decoration: none;
+}
+/* Visitado */
+a:visited {
+    color: green;
+}
+/* Foco del teclado */
+a:focus {
+    color: blue;
+    text-decoration: underline;
+}

@@ -1,0 +1,36 @@
+#titulo {
+    color: teal;
+}
+strong, a, tfoot th{
+    color: red;
+}
+.destacado, .especial, td strong {
+    color: orange;
+}
+#subtitulo,a em, caption {
+    color: blue;
+}
+
+span.especial {
+    color: rgb(155, 72, 228);
+}
+
+span#especial {
+    color: rgb(236, 87, 241);
+}
+
+#adicional {
+    color: rgb(119, 128, 0);
+}
+#adicional a, td{
+    color: green;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td,th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
