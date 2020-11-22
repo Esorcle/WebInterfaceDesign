@@ -1,0 +1,288 @@
+/*
+  ===============
+      Generic
+  ==============
+  */
+
+* {
+    box-sizing: border-box;
+}
+
+.dark-bg {
+    background-color: #202026;
+}
+
+.dark-vertion div {
+    color: #fff;
+}
+
+body {
+    background-color: #100e17;
+    color: #fff;
+    font-family: "Baloo 2";
+    font-size: 14px;
+    font-style: none;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+    position: relative;
+    text-align: left;
+    opacity: 0.9;
+    overflow-x: hidden !important;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    padding: 0;
+}
+
+a {
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding: 0px;
+    text-decoration: none !important;
+    transition: color 0.3s ease;
+    opacity: 0.9;
+}
+
+.container {
+    color: #fff;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.img-color-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/*
+  ===============
+      Header
+  ==============
+  */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    display: block;
+    left: 0;
+    padding: 20px 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1030;
+
+}
+
+.mh-header .logo::first-letter {
+    color: #0bceaf;
+    font-size: 2.3rem;
+}
+
+.mh-header .logo {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+/*
+  ===============
+      Exercice
+  ==============
+  */
+.mh-section-exercice {
+    margin: 0 auto;
+    margin-top: 80px;
+    padding-bottom: 56.25%;
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+}
+
+.mh-section-exercice h1 {
+    border-bottom: 1px solid #0bceaf;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 65px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+iframe {
+    background-color: #fff;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+}
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+    /*
+  ===============
+      Header min 576px max 991px
+  ==============
+  */
+
+
+    .mh-header-overlay {
+        position: fixed;
+        display: none;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 3;
+    }
+
+    .mh-header nav {
+        padding: 0;
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+}
+
+
+@media screen and (max-width: 991px) {
+
+    /*
+  ===============
+      Header max 991px
+  ==============
+  */
+    .mobile-menu {
+        background-color: transparent;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        width: 100%;
+    }
+
+    /*Strip the ul of padding and list styling*/
+    .mobile-menu ul {
+        background-color: transparent;
+        border: 0.15rem solid black;
+        display: none;
+        margin: 0 auto;
+        margin-top: 1rem;
+        position: absolute;
+        position: static;
+        text-align: right;
+        width: 100%;
+    }
+
+    .mobile-menu li {
+        display: inline-block;
+        margin-bottom: 0;
+    }
+
+    /*Style for menu links*/
+    .mobile-menu li a {
+        background-color: #202026;
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+        text-transform: normal;
+        transition: all 0.4s ease 0s;
+    }
+
+    /*Hover state for top level links*/
+    .mobile-menu li:hover a {
+        background-color: lightgray;
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    /*Hover state for dropdown links*/
+    .mobile-menu li:hover .mobile-menu ul a:hover {
+        color: lightgray;
+    }
+
+    /*Hide dropdown links until they are needed*/
+    .mobile-menu li ul {
+        display: none;
+    }
+
+    /*Make all menu links full width*/
+    .mobile-menu ul li,
+    .mobile-menu li a {
+        width: 100%;
+    }
+
+    /*Hide checkbox*/
+    .mobile-menu input[type="checkbox"] {
+        display: none;
+    }
+
+    /*Show menu when invisible checkbox is checked*/
+    .mobile-menu input[type="checkbox"]:checked~#menu {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    /*
+  ===============
+      Generic min 991px
+  ==============
+  */
+    .container {
+        max-width: 960px;
+    }
+
+    /*
+  ===============
+      Header min 991px
+  ==============
+  */
+    nav {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    nav input,
+    .buttonMenu {
+        display: none;
+    }
+
+    .logo {
+        font-weight: 900;
+        font-size: 1.4rem;
+        justify-self: start;
+    }
+
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(4, 100px);
+        grid-gap: 100px;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    nav ul li:hover {
+        border-bottom: 2px solid #0bceaf;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1180px;
+    }
+}

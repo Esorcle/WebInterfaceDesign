@@ -1,61 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Estilo tipografía externa -->
-        <link
-            href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap"
-            rel="stylesheet">
-        <!-- Estilo propio -->
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="../../css/1_ejerciciosRepaso/ej13/style.css"/>
-        <link rel="stylesheet" href="../../css/_header.css"></head>
-    <title>Selectores avanzados</title>
+
+<head>
+    <title>Secundary</title>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esorcle Personal cv/resume template for professional and personal website." />
+    <meta name="keywords"
+        content="creative, cv, designer,  online cv, online resume, powerful portfolio, professional, professional resume, responsive, resume, vcard " />
+
+    <!-- Icons -->
+    <link rel="shortcut icon" type="image/png" href="img/iconoPagina.png" />
+    <!-- Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../fontawesome/css/font-awesome.min.css">
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="../../css/_secundaryPage.css">
+
 </head>
+
 <body>
-    <header>
-        <h1>Estefanía Ortiz Clemente</h1>
-        <h2>"Tabla. Selectores"</h2>
+    <!--====================NAVIGATION======================-->
+    <header class="mh-header" id="mh-header">
+        <div class="mh-header-overlay"></div>
+        <div class="container">
+            <div class="row">
+                <nav class="mobile-menu">
+
+                    <a class="logo" href="../../index.html#mh-home">Esorcle</a>
+
+                    <!-- Hack Para Desplegar el Menú activando un checkbox -->
+                    <input type="checkbox" class="checkbox" id="buttonMenu" />
+                    <label for="buttonMenu" class="buttonMenu fa fa-bars fa-2x" tabindex="1">
+                    </label>
+                    <ul id="menu" class="menu">
+                        <li><a href="../../index.html#mh-home">Home</a></li>
+                        <li><a href="../../index.html#mh-about">About</a></li>
+                        <li><a href="../../index.html#mh-work">Works</a></li>
+                        <li><a href="../../index.html#mh-contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
-    <table>
-        <tr>
-            <th>Cambio</th>
-            <th>Compra</th>
-            <th>Venta</th>
-            <th>Máximo</th>
-            <th>Mínimo</th>
-        </tr>
-        <tr>
-            <th class="euro">Euro/Dolar</th>
-            <td>1.25</td>
-            <td>1.25</td>
-            <td>1.25</td>
-            <td>1.24</td>
-        </tr>
-        <tr>
-            <th class="dolar">Dolar/Yen</th>
-            <td>119.01</td>
-            <td>119.05</td>
-            <td>119.82</td>
-            <td>119.82</td>
-        </tr>
-        <tr>
-            <th class="libra">Libra/Dolar</th>
-            <td>1.86</td>
-            <td>1.86</td>
-            <td>1.86</td>
-            <td>1.85</td>
-        </tr>
-        <tr>
-            <th class="yen">Yen/Euro</th>
-            <td>0.67</td>
-            <td>0.67</td>
-            <td>0.66</td>
-            <td>0.67</td>
-        </tr>
-    </table>
+    <!--====================EXERCICE======================-->
+    <section class="mh-section-exercice">
+        <h1>Selectores 2</h1>
+        <iframe src="ej13/index.html" width="100%" height="300px"></iframe>
+    </section>
 </body>
-</html>

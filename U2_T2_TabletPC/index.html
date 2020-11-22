@@ -18,17 +18,18 @@
     <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
     <!-- Custom CSS-->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
 
 </head>
 
 <body>
     <!--====================NAVIGATION======================-->
     <header class="mh-header" id="mh-header">
-        <div class=".mh-header-overlay" ></div>
+        <div class="mh-header-overlay"></div>
         <div class="container">
             <div class="row">
                 <nav class="mobile-menu">
-                    <a class="logo" href="#mh-header">Esorcle</a>
+                    <a class="logo" href="#mh-home">Esorcle</a>
                     <!-- Hack Para Desplegar el Menú activando un checkbox -->
                     <input type="checkbox" class="checkbox" id="buttonMenu" />
                     <label for="buttonMenu" class="buttonMenu fa fa-bars fa-2x" tabindex="1">
@@ -36,7 +37,7 @@
                     <ul id="menu" class="menu">
                         <li><a href="#mh-home">Home</a></li>
                         <li><a href="#mh-about">About</a></li>
-                        <li><a href="#mh-works">Works</a></li>
+                        <li><a href="#mh-work">Works</a></li>
                         <li><a href="#mh-contact">Contact</a></li>
                     </ul>
                 </nav>
@@ -52,14 +53,12 @@
                         <div class="img-border">
                             <!-- <img src="img/_DSC6961.jpg" alt=""  class="img-fluid">  -->
                         </div>
-
                     </div>
                     <div class="mobile tablet info">
                         <div class="mh-header-info">
                             <div class="mh-promo">
                                 <span>Hello I'm</span>
                             </div>
-
                             <h1>Estefanía Ortiz</h1>
                             <h4>Web Developer</h4>
 
@@ -85,7 +84,7 @@
         </div>
     </section>
     <!--====================ABOUT ME======================-->
-    <section class="mh-about">
+    <section class="mh-about" id="mh-about">
         <div class="container">
             <div class="row section-separator">
                 <div class="tablet-all item-1  ">
@@ -108,9 +107,8 @@
                                 <li><span>Angular</span></li>
                                 <li><span>Javascript</span></li>
                             </ul>
-
                         </article>
-                        <a href="" class="button">Downlaod CV <i class="fa fa-download"></i></a>
+                        <a href="" class="button-down">Downlaod CV <i class="fa fa-download"></i></a>
                     </article>
                 </div>
 
@@ -229,21 +227,26 @@
                             <div class="mh-exercice-deatils">
                                 <!-- exercice Institutes-->
                                 <div class="mh-exercice-item dark-bg">
-                                    <h4>Tradicional <a href="">Go</a></h4>
+                                    <h4>Tradicional <a href="workslistExercice/index.html">Go</a></h4>
                                     <div class="mh-eduyear">11/10/2020</div>
-                                    <p>Página principal para móvil realizada de manera tradicional, más un mix 16 ejercicios de repaso y todo subirlo a servidor gratuito mediante FTP<p>
+                                    <p>Página principal para móvil realizada de manera tradicional, más un mix 16
+                                        ejercicios de repaso y todo subirlo a servidor gratuito mediante FTP<p>
                                 </div>
                                 <!-- exercice Institutes-->
                                 <div class="mh-exercice-item dark-bg">
-                                    <h4>Flex y Grid<a href="">Go</a></h4>
+                                    <h4>Flex y Grid<a href="sketch/index.html">Go</a></h4>
                                     <div class="mh-eduyear">22/11/2020</div>
-                                    <p>Realización de página web con 3 vesiones, para móvil en tradicional, tablet en flex y ordenador en grid. Páginas de ejericios acorde al estilo de la página principal. Skecth de las versiones y Wwrerframes en AXURE</p>
+                                    <p>Realización de página web con 3 vesiones, para móvil en tradicional, tablet en
+                                        flex y ordenador en grid. Páginas de ejericios acorde al estilo de la página
+                                        principal. Skecth de las versiones y Wwrerframes en AXURE</p>
                                 </div>
                                 <!-- exercice Institutes-->
                                 <div class="mh-exercice-item dark-bg">
                                     <h4>Relleno<a href="">Go</a></h4>
                                     <div class="mh-eduyear">2005-2008</div>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim iusto, libero ipsum quod sint natus eveniet, provident, illo nam quisquam doloremque? Dolores, iusto eaque repellat praesentium dolor eos odit nulla?</p>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim iusto, libero
+                                        ipsum quod sint natus eveniet, provident, illo nam quisquam doloremque? Dolores,
+                                        iusto eaque repellat praesentium dolor eos odit nulla?</p>
                                 </div>
                             </div>
                         </div>
@@ -255,95 +258,97 @@
     </section>
 
     <!--====================FOOTER======================-->
-        <footer class="mh-footer mh-footer-3" id="mh-contact">
-            <div class="container-footer">
-                <div class="row section-separator">
-                    <div class="mobile tablet-all section-title">
-                        <h3>Contact Me</h3>
-                    </div>
-                    <div class="mobile tablet-all map-image image-bg">
-                        <div class="container mt-30">
-                            <div class="row">
-                                <div class="mobile tablet-all  mh-footer-address">
-                                    <div class="mobile tablet-all xs-no-padding">
-                                        <div class="mh-address-footer-item dark-bg media-flex">
-                                            <div class="each-icon">
-                                                <i class="fa fa-location-arrow"></i>
-                                            </div>
-                                            <div class="each-info">
-                                                <h4>Address</h4>
-                                                <address>
-                                                    Seville
-                                                </address>
-                                            </div>
+    <footer class="mh-footer mh-footer-3" id="mh-contact">
+        <div class="container-footer">
+            <div class="row section-separator">
+                <div class="mobile tablet-all section-title">
+                    <h3>Contact Me</h3>
+                </div>
+                <div class="mobile tablet-all map-image image-bg">
+                    <div class="container mt-30">
+                        <div class="row">
+                            <div class="mobile tablet-all  mh-footer-address">
+                                <div class="mobile tablet-all xs-no-padding">
+                                    <div class="mh-address-footer-item dark-bg media-flex">
+                                        <div class="each-icon">
+                                            <i class="fa fa-location-arrow"></i>
                                         </div>
-                                    </div>
-                                    <div class="mobile tablet-all xs-no-padding">
-                                        <div class="mh-address-footer-item media-flex dark-bg">
-                                            <div class="each-icon">
-                                                <i class="fa fa-envelope-o"></i>
-                                            </div>
-                                            <div class="each-info">
-                                                <h4>Email</h4>
-                                                <a href="mailto:yourmail@email.com">estefaniaortizcle@gmail.com</a><br>
-                                                <a href="mailto:yourmail@email.com">alum.eortizc@iesalixar.org</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="mobile tablet-all xs-no-padding">
-                                        <div class="mh-address-footer-item media-flex dark-bg">
-                                            <div class="each-icon">
-                                                <i class="fa fa-phone"></i>
-                                            </div>
-                                            <div class="each-info">
-                                                <h4>Phone</h4>
-                                                <a href="callto:(880)-8976-987">(+34)633 375 08</a><br>
-                                            </div>
+                                        <div class="each-info">
+                                            <h4>Address</h4>
+                                            <address>
+                                                Seville
+                                            </address>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="mobile tablet-all form">
-                                    <form id="contactForm" class="single-form quate-form">
-                                        <div id="msgSubmit" class="h3 text-center hidden"></div>
-                                        <div class="row">
-                                            <div class="mobile tablet-all">
-                                                <input name="name" class="contact-name form-control" id="name" type="text" placeholder="First Name" required>
-                                            </div>
-                
-                                            <div class="mobile tablet-all">
-                                                <input name="name" class="contact-email form-control" id="L_name" type="text" placeholder="Last Name" required>
-                                            </div>
-                
-                                            <div class="mobile tablet-all">
-                                                <input name="name" class="contact-subject form-control" id="email" type="email" placeholder="Your Email" required>
-                                            </div>
-                
-                                            <div class="mobile tablet-all">
-                                                <textarea class="contact-message" id="message" rows="6" placeholder="Your Message" required></textarea>
-                                            </div>
-                                            
-                                            <!-- Subject Button -->
-                                            <div class="btn-form mobile tablet-all">
-                                                <button type="submit" class="btn btn-fill btn-block" id="form-submit">Send Message</button>
-                                            </div>
+                                <div class="mobile tablet-all xs-no-padding">
+                                    <div class="mh-address-footer-item media-flex dark-bg">
+                                        <div class="each-icon">
+                                            <i class="fa fa-envelope-o"></i>
                                         </div>
-                                    </form>
+                                        <div class="each-info">
+                                            <h4>Email</h4>
+                                            <a href="mailto:yourmail@email.com">estefaniaortizcle@gmail.com</a><br>
+                                            <a href="mailto:yourmail@email.com">alum.eortizc@iesalixar.org</a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="mobile tablet-all mh-copyright">
+                                <div class="mobile tablet-all xs-no-padding">
+                                    <div class="mh-address-footer-item media-flex dark-bg">
+                                        <div class="each-icon">
+                                            <i class="fa fa-phone"></i>
+                                        </div>
+                                        <div class="each-info">
+                                            <h4>Phone</h4>
+                                            <a href="callto:(880)-8976-987">(+34)633 375 08</a><br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mobile tablet-all">
+                                <form id="contactForm">
+                                    <div id="space"></div>
                                     <div class="row">
-                                        <div class="mobile tablet">
-                                            <div class="text-left text-xs-center">
-                                                <p>All right reserved Esorcle @ 2020</p>
-                                            </div>
+                                        <div class="mobile tablet-all">
+                                            <input name="name" class="form-control" id="name" type="text"
+                                                placeholder="First Name" required>
                                         </div>
-                                        <div class="mobile tablet" style=text-align:center>
-                                            <ul class="social-icon">
-                                                <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href=""><i class="fa fa-github"></i></a></li>
-                                                <li><a href=""><i class="fa fa-dribbble"></i></a></li>
-                                            </ul>
+
+                                        <div class="mobile tablet-all">
+                                            <input name="name" class="form-control" id="L_name" type="text"
+                                                placeholder="Last Name" required>
                                         </div>
+
+                                        <div class="mobile tablet-all">
+                                            <input name="name" class="form-control" id="email" type="email"
+                                                placeholder="Your Email" required>
+                                        </div>
+
+                                        <div class="mobile tablet-all">
+                                            <textarea class="contact-message" id="message" rows="6"
+                                                placeholder="Your Message" required></textarea>
+                                        </div>
+
+                                        <!-- Subject Button -->
+                                        <div class="mobile tablet-all">
+                                            <button type="submit" class="btn-form btn" id="form-submit">Send
+                                                Message</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="mobile tablet-all mh-copyright">
+                                <div class="row">
+                                    <div class="mobile tablet">
+                                        <p class="text-left text-xs-center">All right reserved Esorcle @ 2020</p>
+                                    </div>
+                                    <div class="mobile tablet" style=text-align:center>
+                                        <ul class="social-icon">
+                                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href=""><i class="fa fa-github"></i></a></li>
+                                            <li><a href=""><i class="fa fa-dribbble"></i></a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -351,7 +356,8 @@
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
 </body>
 

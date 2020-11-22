@@ -1,21 +1,14 @@
-body {
-    background-color: rgb(182, 203, 226);
-}
 
 figure{
-    border: 1px rgb(94, 122, 153) solid;
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
     padding: 4px;
     text-align: center;
-  
 }
+
 figure img {
     width: 80%;
 }
 
 figcaption {
-    background-color: rgb(94, 122, 153);
     color: white;
     font-style: italic;
     padding: 2px;

@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap'); */
 
-/* font-family: 'Roboto', sans-serif */
-* {
+/*
+  ===============
+      Generic
+  ==============
+  */
+
+  * {
     box-sizing: border-box;
 }
-
 .dark-bg {
     background-color: #202026;
 }
@@ -41,7 +45,6 @@ ul {
     padding: 0;
 }
 
-
 a {
     background-color: transparent;
     color: #fff;
@@ -69,8 +72,7 @@ h2 {
     line-height: 1.2;
 }
 
-h3,
-.h3 {
+h3 {
     color: #fff;
     font-weight: bold;
 }
@@ -81,10 +83,6 @@ h4 {
     line-height: 1.2;
     margin-top: 0;
     margin-bottom: .5rem;
-}
-
-img {
-    vertical-align: middle;
 }
 
 .section-separator {
@@ -104,6 +102,38 @@ img {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
+.social-icon {
+    display: inline-block;
+}
+
+.social-icon li {
+    float: left;
+    margin-bottom: 0px;
+    margin-right: 8px;
+}
+
+.social-icon li a {
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px;
+}
+
+.mh-about .button-down, .btn-form{
+    background-color: #0bceaf;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    opacity: 0.75;
+    padding: 8px 30px;
+    transition: opacity 0.3 ease;
+}
+
+.mh-about .button-down:hover,.btn-form:hover {
+    opacity: 1;
+}
+
 /*
   ===============
       Header
@@ -113,21 +143,22 @@ header {
     background-color: rgba(0, 0, 0, 0.7);
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     left: 0;
+    padding: 20px 0;
     position: fixed;
     right: 0;
     top: 0;
     z-index: 1030;
-    
-    
+
 }
 
-header {
-    padding: 20px 0;
-}
-
-.logo::first-letter {
-    font-size: 2.3rem;
+.mh-header .logo::first-letter {
     color: #0bceaf;
+    font-size: 2.3rem;
+}
+.mh-header .logo {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bolder;
 }
 
 /*
@@ -157,8 +188,9 @@ header {
     background-image: url(../img/_DSC6961.jpg);
     background-position: center center;
     background-size: cover;
-    border: 20px solid rgba(0, 0, 0, 0.7);
+    border: 20px solid rgba(0, 0, 0, 0.8);
     border-radius: 50%;
+    box-shadow: 0 0 1rem 1rem rgb(2, 2, 2);
     height: 350px;
     float: none;
     margin: 0 auto;
@@ -183,6 +215,15 @@ header {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 0px;
+}
+
+.mh-promo {
+    animation-name: globo;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    animation-direction: alternate; 
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
 }
 
 .mh-home .mh-header-info h4 {
@@ -218,43 +259,23 @@ address {
     margin-top: 0;
 }
 
-.social-icon {
-    display: inline-block;
-}
-
-.social-icon li {
-    float: left;
-    margin-bottom: 0px;
-    margin-right: 8px;
-}
-
-.social-icon li a {
-    text-align: center;
-    padding: 10px;
-    border-radius: 50%;
-}
-
 .mh-home .mh-header-info .social-icon li a {
     font-size: 25px;
-    text-align: center;
-    padding: 0;
     margin-right: 0;
-    border-radius: 50%;
+    padding: 0;
+    
 }
 
 .mh-home .mh-header-info .social-icon li .fa {
+    border-radius: 3px;
     font-size: 18px;
     line-height: 30px;
+    margin-right: 10; 
     padding: 4px 14px;
-    margin-right: 10;
-    transition: 0.3s;
-    border-radius: 3px;
 }
 
-.social-icon li .fa:hover {
-    -webkit-transition: 0.3s;
+.mh-home .social-icon li .fa:hover {
     background-color: #fff;
-    transition: 0.3s;
 }
 
 /*
@@ -276,51 +297,37 @@ address {
 }
 
 .mh-about-tag {
-    word-break: break-all;
     margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 10px;;
 }
 
-.mh-about-tag ul li {
-    margin: 0px 6px;
+.mh-about-tag ul li, .mh-about-tag ul li span {
     border-radius: 4px;
+} 
+
+.mh-about-tag ul li {
+    display: inline-block;
+    margin: 0px 6px;
     margin-bottom: 10px;
     padding: 4px 0px;
-    display: inline-block;
 }
 
 .mh-about-tag ul li span {
     border: 1px solid #0bceaf;
     padding: 4px 10px;
-    border-radius: 4px;
 }
 
-.button {
+.mh-about .button-down {
     display: inline-block;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    user-select: none;
-    border: 1px solid transparent;
-    font-size: 1rem;
-    line-height: 1.5;
-    transition: color 0.3 ease;
-    padding: 8px 30px;
-    font-weight: bold;
-    border-radius: 20px;
     outline: 0;
-    background-color: #0bceaf;
-    color: #fff;
     margin-top: 20px;
 }
 
-.button:last-child {
+.mh-about .button-down:last-child {
     margin-right: 0px !important;
 }
 
-.btn:not(:disabled):not(.disabled) {
-    cursor: pointer;
-}
+
 
 /*
   ===============
@@ -680,14 +687,10 @@ box-shadow: 0 15px 35px;
     text-align: center;
 }
 
-.text-center {
-    text-align: center !important;
-}
 
-#msgSubmit {
+
+#space {
     margin-top: 20px;
-    font-size: 22px;
-    line-height: 30px;
     margin-bottom: 30px;
 }
 
@@ -735,34 +738,12 @@ textarea {
     box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
 }
 
-.mh-footer .contact-message:focus {
-    box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
-}
-
-.btn {
-    transition: color 0.3s ease;
-    padding: 8px 30px;
-    font-weight: bold;
-    border-radius: 20px;
-    text-align: center;
-    white-space: nowrap;
-    user-select: none;
-    border: 1px solid transparent;
-    font-size: 1rem;
+.btn-form {
     line-height: 1.5;
-}
-
-.btn-fill {
-    background-color: #0bceaf;
-    color: #fff;
-    margin-right: 0px !important;
-    opacity: 0.65;
-}
-
-.btn-block {
-    display: block;
     width: 100%;
-
+}
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
 }
 
 .mh-copyright {
@@ -804,6 +785,10 @@ textarea {
     .mh-about .item-2 {
         margin-top: 30px;
     }
+
+    .mh-work h3 {
+        text-align: center;
+    }
     /*
   ===============
       Footer min 576px
@@ -835,8 +820,6 @@ textarea {
         padding: 30px 0;
     }
 
-
-
     /*
   ===============
       Home 576px
@@ -849,12 +832,9 @@ textarea {
         margin-top: 40px;
     }
 
-
-
     .social-icon {
-        display: inline-block;
-        margin: 0 auto;
         float: none;
+        margin: 0 auto;
         text-align: center;
     }
 
@@ -863,9 +843,9 @@ textarea {
     }
 
     .social-icon li a {
-        width: 30px;
         height: 30px;
         margin-right: 0;
+        width: 30px;
     }
 
     /*
@@ -925,8 +905,6 @@ textarea {
     .text-left.text-xs-center {
         text-align: center;
     }
-
-
 }
 
 
@@ -1104,15 +1082,6 @@ textarea {
         padding: 40px 0;
     }
 
-        /*
-  ===============
-      Works min 576px max 991px
-  ==============
-  */
-    .mh-work h3 {
-        text-align: center;
-    }
-
     /*
   ===============
       Footer min 576px max 991px
@@ -1133,74 +1102,53 @@ textarea {
 
     /*
   ===============
-      General max 991px
-  ==============
-  */
-    /*
-  ===============
       Header max 991px
   ==============
   */
     .mobile-menu {
-        display: block;
-        width: 100%;
         background-color: transparent;
-        width: 100%;
-        /*.mh-nav {
-            width: 100%;
-        }*/
-        position: relative;
+        display: block;
         margin: 0 auto;
+        position: relative;
+        width: 100%;
     }
 
     /*Strip the ul of padding and list styling*/
     .mobile-menu ul {
+        background-color: transparent;
         border: 0.15rem solid black;
+        display: none;
         margin: 0 auto;
+        margin-top: 1rem;
+        position: absolute;
+        position: static;
         text-align: right;
         width: 100%;
-        position: absolute;
-        background-color: transparent;
-        /*Make dropdown links appear inline*/
-        margin-top: 1rem;
-        position: static;
-        display: none;
-    }
-
-    .logo {
-        font-size: 1.5rem;
-        font-weight: bolder;
     }
 
     .mobile-menu label {
         float: right;
     }
 
-    /*Create a horizontal list with spacing*/
     .mobile-menu li {
         display: inline-block;
-        /*Create vertical spacing*/
         margin-bottom: 0;
     }
 
     /*Style for menu links*/
     .mobile-menu li a {
+        background-color: #202026;
         display: block;
+        padding: 10px 0;
         text-align: center;
         text-transform: normal;
-        background-color: #202026;
-        padding: 10px 0;
-        -webkit-transition: all 0.4s ease 0s;
-        -moz-transition: all 0.4s ease 0s;
-        -ms-transition: all 0.4s ease 0s;
-        -o-transition: all 0.4s ease 0s;
         transition: all 0.4s ease 0s;
     }
 
     /*Hover state for top level links*/
     .mobile-menu li:hover a {
-        color: rgba(0, 0, 0, 0.5);
         background-color: lightgray;
+        color: rgba(0, 0, 0, 0.5);
     }
 
     /*Hover state for dropdown links*/
@@ -1265,7 +1213,6 @@ textarea {
         padding-left: 5px;
     }
 
-
     /*
   ===============
       About me max  Technical Skill 991px
@@ -1286,7 +1233,6 @@ textarea {
 
     .mh-professional-skills {
         display: none;
-
     }
 
     /*
@@ -1296,12 +1242,10 @@ textarea {
   */
 
     .mh-footer-address .mh-address-footer-item .each-icon .fa {
-        width: 60px;
         height: 60px;
         line-height: 60px;
+        width: 60px;
     }
-
-
 
 }
 
@@ -1316,7 +1260,6 @@ textarea {
     .container {
         max-width: 960px;
     }
-
 
     /*
   ===============
@@ -1353,7 +1296,11 @@ textarea {
         border-bottom: 2px solid #0bceaf;
     }
 
-
+   /*
+  ===============
+      Home min 991px
+  ==============
+  */
     .mh-home .row {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -1403,8 +1350,8 @@ textarea {
 
     .mh-about .row .item-2{
         grid-column: 1 / 3;    
-        width: 70%;  
         justify-self: center;
+        width: 70%; 
     }
 
     .mh-about .row .item-3 {
@@ -1426,9 +1373,8 @@ textarea {
     }
 
     .mh-work .mh-exercice h3{
-        text-align: center;
         margin-bottom: 50px;
-        width: 1180px;
+        width: 100%;
     }
 
     .mh-exercice-deatils{
@@ -1457,10 +1403,10 @@ textarea {
 }
 
 .mh-footer-3 .mh-footer-address .mh-address-footer-item {
+    align-items: center;
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 40% 60%;
-    align-items: center;
 }
 
 .mh-footer .container .mh-copyright{
@@ -1486,8 +1432,3 @@ textarea {
         max-width: 1180px;
     }
 }
-
-/* @media screen and (min-width: 991px) and (max-width: 998px) {
-
-
-@media screen and (max-width: 998px) {}*/
