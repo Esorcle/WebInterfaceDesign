@@ -1,0 +1,53 @@
+
+@import "../components/carousel.scss";
+
+.mh-home {
+    display: flex;
+    flex: 1 0 auto;
+    background-color: $bg-color-header;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 24vh;
+    row-gap: 1vh;
+
+    a {
+        &:hover{
+            color:$bg-link;
+        }
+    }
+    .send {
+        font-size: small;
+        display: flex;
+        width: 80vw;
+        margin: 0 auto 1vh;
+        justify-content: space-between;
+
+        .icon {
+            a>i {
+                margin-right: 2vw;
+            }
+        }
+    }
+    .title {
+        text-align: center;
+        width: 50vw;
+        align-self: center;
+    }
+}
+
+
+
+@media screen and (min-width: 992px) {
+    .mh-home {
+        padding-top: 12vh;
+    .send {
+        justify-content: space-evenly !important;
+        margin: 0 auto 5vh !important;
+    }
+    .icon {
+        a>i {
+            margin-right: 0;
+        }
+    }
+}
+}

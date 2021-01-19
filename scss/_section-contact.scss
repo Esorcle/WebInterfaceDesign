@@ -1,0 +1,39 @@
+@import "card.scss";
+@import "pop-up.scss";
+@import "table.scss";
+
+.mh-contact {
+    flex: 1 0 auto;
+    padding-top: 18vh;
+    margin-bottom: 5vh;
+}
+
+.dark-bg {
+    background-color: #202026;
+}
+
+.title {
+    margin-bottom: 30px;
+    text-align: center;
+    margin: 1vh auto;
+    width: 70vw;
+}
+
+@media screen and (min-width: 992px) {
+
+    .mh-contact {
+        .container {
+            max-width: 80vw;
+
+            article {
+                display: flex;
+                justify-content: space-around;
+                padding: 0 5vh;
+
+                .form {
+                    width: 50vw;
+                }
+            }
+        }
+    }
+}

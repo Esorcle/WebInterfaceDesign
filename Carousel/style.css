@@ -1,0 +1,96 @@
+h1 {
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  p {
+    color: white;
+    text-align: center;
+    width: 80%;
+    margin: 0;
+  }
+  
+  .container {
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 50px;
+  }
+  
+  .carousel {
+    width: 100%;
+    display: flex;
+    transition: all 0.5s;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    background: #8e2de2;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4a00e0, #8e2de2);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4a00e0, #8e2de2);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  
+  .carousel-item {
+    width: 100%;
+  }
+  
+  .navigation {
+    max-width: 1000px;
+    width: 100%;
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  label {
+    width: 15px;
+    height: 15px;
+    margin: 0 10px;
+    background-color: white;
+    transition: all 0.3s;
+    border-radius: 50%;
+    opacity: 0.4;
+  }
+  
+  label:hover {
+    transform: scale(2);
+    opacity: 1;
+  }
+  
+  input[id="1"]:checked ~ label[for="1"] {
+    opacity: 1;
+  }
+  
+  input[id="2"]:checked ~ label[for="2"] {
+    opacity: 1;
+  }
+  
+  input[id="3"]:checked ~ label[for="3"] {
+    opacity: 1;
+  }
+  
+  @media screen and (max-width: 576px) {
+    /* This breakpoint is recommended to change attributes of the card 
+      and its inner elements. For this purpose I just shrunk the buttons
+      and decreased .3em the font-size of the paragraph. */
+  
+    label {
+      width: 10px;
+      height: 10px;
+    }
+  
+    p {
+      font-size: 0.7em;
+    }
+  }

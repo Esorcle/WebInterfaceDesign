@@ -1,0 +1,21 @@
+//// @access public
+//// @author Esorcle
+
+/// Función para obtner el ancho en base a su padre
+/// @parameter {integer} $ancho - Número de columnas en el ancho de la fila que va a ocupar
+/// @return {integer} - Pocentaje, sin el símbolo %, del ancho correspondiente al alemento
+/// @group layout
+
+@function calcWidth($width, $numcolumnas) {
+    @return percentage($width/$numcolumnas);
+}
+
+/// Función para obtener la dimension del font-size en %
+/// @group utiles
+/// @parameter {float} $font-size -- Valor del tamaño de letra
+/// @parameter {float} $font-size-nav -- Valor del tamaño de letra del navegador
+/// @return {integer}
+/// @example scss -- Función Calcular Porcentaje
+@function calcFontSizeRemPercent($font-size-nav,$font-size){
+    @return percentage((($font-size / $font-size-nav)));
+}

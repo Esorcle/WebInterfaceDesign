@@ -1,0 +1,75 @@
+//// @access public
+//// @author Esorcle
+
+@mixin centrado-respecto-padre ($pixel) {
+    margin: #{$pixel}px auto;
+}
+
+@mixin border-style ($pixel, $style) {
+    border: #{$pixel}px $style;
+}
+
+/// Mixin para estilos de fuente base
+/// @parameter  $font-family -- Familia de la fuente
+/// @parameter  $font-base-size -- Tamaño fuente
+/// @group utiles
+@mixin style-font-base ($font-family, $font-base-size, $font-base-weigth, $base-line-height) {
+    font-family: $font-family;
+    font-size: $font-base-size;
+    font-weight: $font-base-weigth;
+    line-height: $base-line-height;
+}
+
+/// Mixin para elementos ajustados a top
+/// @group utiles
+@mixin position-fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+/// Mixin para Ancho y Alto de Elementos
+/// @parameter {color} $color -- Tamaño fuente
+/// @parameter {color} $background-color -- Grosor fuente
+/// @group colores
+@mixin colorAndBackgroundColor($color,$background-color){
+    color: $color;
+    background-color: $background-color;
+}
+
+/// Media querys:
+/// 0-576px: phone
+/// 576 - 991px: Table-portrait
+/// 991 - 1024px: Tablet landscape
+/// 1200 + : normal styles apply
+/// @group utiles
+@mixin phone {
+    @media screen and (max-width: #{$bp-phone}) {
+        @content;
+    }
+}
+/// @group utiles
+@mixin tablet {
+    @media screen and (min-width: #{$bp-phone + 1px}) and (max-width: #{$bp-tablet - 1px}) {
+        @content;
+    }
+}
+/// @group utiles
+@mixin min-tablet {
+    @media screen and (min-width: #{$bp-tablet}) {
+        @content;
+    }
+}
+/// @group utiles
+@mixin max-tablet {
+    @media screen and (max-width: #{$bp-tablet} -1px) {
+        @content;
+    }
+}
+/// @group utiles
+@mixin desktop {
+    @media screen and (min-width: #{$bp-desktop}) {
+        @content;
+    }
+}

@@ -1,0 +1,55 @@
+.uk-delivery {
+    border-collapse: separate;
+    color: #333333;
+    margin: 0;
+    position: relative;
+    border: solid 1px #fff;
+    width: 100%;
+    border-radius: 5px;
+    border-spacing: 0;
+}
+
+table {
+
+    table tr:first-of-type td:first-of-type {
+        border-radius: 5px 0 0 0;
+    }
+
+    tbody tr td.service {
+        font-size: 16px;
+        text-align: center
+    }
+
+    tr:nth-child(2n+1) {
+        background: none repeat scroll 0 0 #dbdbdb;
+    }
+
+    tbody tr:first-child td {
+        border-top-width: 0;
+    }
+
+    tbody tr td {
+        border: 1px solid #ccc;
+        vertical-align: middle;
+        padding: 20px;
+        text-align: left;
+    }
+
+    .cost,
+    .deadline {
+        text-align: center;
+    }
+
+    tbody tr td.deadline {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    td {
+        line-height: 1.6;
+    }
+
+    table tr:first-of-type td:last-of-type {
+        border-radius: 0 5px 0 0;
+    }
+}

@@ -1,0 +1,161 @@
+.mh-footer {
+    width: 100%;
+    display: inline-block;
+    background-image: url("../img/map-color-overlay.png");
+    background-color: $bg-color-footer;
+    text-align: center;
+    text-decoration: underline;
+    box-shadow: $box-shadow;
+
+    .footer-distributed {
+        box-shadow: 0 1px 1px 0 $bg-color-footer;
+        box-sizing: border-box;
+        width: calcWidth(100, 100);
+        text-align: left;
+        padding: 5px 30px;
+
+        .footer-left {
+            width: calcWidth(60, 100);
+
+            div,
+            div p {
+                color: #8f9296;
+                font-size: 14px;
+                margin: 0;
+            }
+
+            .footer-links {
+                color: $color-primary;
+                margin: 0 0 5px;
+                padding: 0;
+                transition: ease .25s;
+
+                a {
+                    display: block;
+                    float: left;
+                    text-decoration: none;
+                    color: inherit;
+                    transition: ease .25s;
+
+                    &:hover {
+                        color: $bg-link;
+                    }
+
+                    &:before {
+                        content: "·";
+                        font-size: 20px;
+                        left: 0;
+                        color: $bg-link;
+                        display: inline-block;
+                        padding-right: 5px;
+                    }
+
+                    &:after {
+                        content: " ";
+                        font-size: 20px;
+                        left: 0;
+                        color: $bg-link;
+                        padding-right: 5px;
+                    }
+                }
+
+                .link-1:before {
+                    content: none;
+                }
+
+            }
+        }
+
+        .footer-right {
+            float: right;
+            width: calcWidth(40, 100);
+            text-align: right;
+
+            p {
+                display: inline-block;
+                margin-bottom: 0;
+            }
+
+            a {
+                display: inline-block;
+                width: 35px;
+                height: 35px;
+                background-color: transparent;
+                border-radius: 2px;
+                text-align: center;
+                line-height: 35px;
+                margin-left: 3px;
+                transition: all .25s;
+
+                &:hover {
+                    transform: scale(1.1);
+                    -webkit-transform: scale(1.1);
+                }
+
+                img {
+                    width: 100%;
+                    vertical-align: text-bottom;
+                }
+            }
+        }
+    }
+}
+
+@include phone {
+    .footer-left,
+    .footer-right {
+        clear: both;
+        text-align: center !important;
+        width: 100% !important;
+    }
+
+    .footer-right {
+        float: none;
+        margin: 5px auto 20px;
+        border-bottom: 1px solid $bg-link;
+    }
+
+    .footer-links {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        a {
+            &:before {
+                content: none !important;
+                font-size: 20px;
+                left: 0;
+                color: $bg-link;
+                display: inline-block;
+                padding-right: 5px;
+            }
+        }
+    }
+    
+}
+
+@include tablet {
+    .mh-footer {
+        .footer-distributed {
+                padding: 5px 30px;
+            .footer-right {
+                p {
+                    display: block;
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .mh-footer {
+        .footer-distributed {
+            .footer-left {
+                div:last-child {
+                    clear: both;
+                }
+            }
+        }
+    }
+}

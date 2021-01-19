@@ -1,0 +1,85 @@
+//// @access public
+//// @author Esorcle
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; //altura del viewport
+    background-color: #100e17;
+    color: #999999;
+    margin: 0;
+    opacity: 0.9;
+    overflow-x: hidden !important;
+}
+
+
+.img-color-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.container {
+    color: $color-primary;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    padding: 0;
+}
+
+a {
+    background-color: transparent;
+    color: $color-primary;
+    cursor: pointer;
+    padding: 0px;
+    text-decoration: none !important;
+    transition: color 0.3s ease;
+    opacity: 0.9;
+
+    &:hover{
+        color: $bg-link;
+    }
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.2;
+} 
+
+h3 {
+    color: $color-primary;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
+.btn {
+    border-radius: 5px;
+
+    &:hover, &:active {
+        background-color: $bg-link;
+        border: 1px solid $bg-link;
+    }
+}
+
+

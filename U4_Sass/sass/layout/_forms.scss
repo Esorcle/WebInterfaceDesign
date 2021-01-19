@@ -1,0 +1,53 @@
+#space {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
+    background-color: transparent;
+    border-color: transparent;
+    margin-bottom: 20px;
+    height: 50px;
+    line-height: 50px;
+}
+
+form input,
+form textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    overflow: visible;
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
+
+.btn-form {
+    line-height: 2.5;
+    font-size: larger;
+    width: 100%;
+}
+
+.contact-message {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 20px;
+    outline: 0;
+    box-shadow: 0 0px 2px 0 rgba(255, 255, 255, 0.8), 0 0px 1px 1px rgba(255, 255, 255, 0.8);
+}

@@ -1,0 +1,102 @@
+//// @author Estefanía Ortiz
+
+/// Estilos carousel 
+
+/* It's important to use images of similar or equal size/ratio.
+   For this example I used ultra wide images.
+   The card will adapt to the image size! */
+
+
+   .mh-home .container {
+    position: relative;
+    width: 100vw;
+    padding: 0;
+    overflow: hidden;
+  
+    .carousel {
+      width: 100%;
+      display: flex;
+      transition: all 0.5s ease;
+      height: 50vh;
+    }
+  /* Para texto
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      width: 100%;
+      background: #8e2de2;
+      /* fallback for old browsers *//*
+      background: -webkit-linear-gradient(to right, #4a00e0, #8e2de2);
+      /* Chrome 10-25, Safari 5.1-6 *//*
+      background: linear-gradient(to right, #4a00e0, #8e2de2);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *//*
+    }*/
+  
+    .carousel-item {
+      max-width: 100%;
+      object-fit: cover;
+    }
+  
+    .navigation {
+      width: 100%;
+      position: absolute;
+      bottom: 15px;
+      display: flex;
+      justify-content: center;
+    }
+  
+    label {
+      width: 15px;
+      height: 15px;
+      margin: 0 10px;
+      background-color: white;
+      transition: all 0.3s;
+      border-radius: 50%;
+      opacity: 0.4;
+    }
+  
+    label:hover {
+      transform: scale(2);
+      opacity: 1;
+    }
+  
+    input[id="1"]:checked~label[for="1"] {
+      opacity: 1;
+    }
+  
+    input[id="2"]:checked~label[for="2"] {
+      opacity: 1;
+    }
+  
+    input[id="3"]:checked~label[for="3"] {
+      opacity: 1;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    /* This breakpoint is recommended to change attributes of the card 
+        and its inner elements. For this purpose I just shrunk the buttons
+        and decreased .3em the font-size of the paragraph. */
+  
+    label {
+      width: 10px;
+      height: 10px;
+    }
+  //Afecta al footer, arreglar
+    // p {
+    //   font-size: 0.7em;
+    // }
+  }
+  
+  @media screen and (min-width: 992px) {
+  
+    .mh-home .container {
+      max-width: 70vw;
+    }
+    .carousel {
+      height: 60vh !important;
+    }
+  }

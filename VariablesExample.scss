@@ -1,0 +1,168 @@
+//// @author Estefanía Ortiz
+
+
+/// @font oswald (Regular 400)
+// /// <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+// $font-oswald: (
+//     'name': 'Oswald',
+//     'source': 'https://fonts.googleapis.com/css2?family=Oswald&display=swap',
+// );
+// //@include add('font', 'oswald', $font-oswald);
+
+/// Variables de color
+///
+/// Color tema oscuro
+/// @group colors
+/// @colors dark-theme
+/// Color tema oscuro 
+$bg-color-header: rgba(0, 0, 0, 0.7);
+$box-shadow-header: 0 2px 5px 5px rgba(175, 6, 6, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+$bg-color-transparent: transparent;
+$bg-color-overlay: rgba(0, 0, 0, 0.5);
+
+
+/// Variables de tamaño
+///
+/// Text-ratios
+/// @group sizes
+/// @sizes text-ratios
+$text-ratios: (
+  'line-height': 1.4,
+);
+//@include esorcle-add('sizes', 'font-sizes', $font-sizes);
+
+$root-sizes: (
+  'root': 18px,
+  'responsive': calc(1em + 0.125vw),
+  'large': calc(1rem + 0.5vw),
+  'small': 0.9rem,
+);
+
+$text-sizes: (
+  'reset': 1rem,
+  'h1': calc(1rem + 2vw),
+  'h2': calc(1rem + 1vw),
+  'h3': '#large',
+  'quote': '#large',
+  'code': '#small',
+  'footer': '#small',
+  'search': '#small',
+);
+$spacing-sizes: (
+  'rhythm': 1rem
+    (
+      'line-height': 1,
+    ),
+  'gutter': '#rhythm',
+  'gutter-plus': '#gutter'
+    (
+      'plus': '#shim',
+    ),
+  'double-gutter': '#gutter'
+    (
+      'times': 2,
+    ),
+  'flex-gutter': 'calc(#shim + 2.5vw)',
+  'spacer': 'calc(%s + 2.5vw)'
+    (
+      '%s': '#gutter'
+        (
+          'times': 3,
+        ),
+    ),
+  'gutter-minus': '#gutter'
+    (
+      'minus': '#half-shim',
+    ),
+  'shim': '#gutter'
+    (
+      'times': 0.5,
+    ),
+  'half-shim': '#shim'
+    (
+      'times': 0.5,
+    ),
+  'quarter-shim': '#shim'
+    (
+      'times': 0.25,
+    ),
+);
+
+$pattern-sizes: (
+  'nav-underline': 4px,
+  'nav-icon': 28px,
+  'arrow-border': 8px,
+  'arrow-depth': '#shim',
+  'arrow-side': '#gutter',
+  'font-preview': 24em,
+  'specimen-aa': '#rhythm'
+    (
+      'times': 3,
+    ),
+  'color-preview': 16em,
+  'color-swatch': '#rhythm'
+    (
+      'times': 4,
+    ),
+  'footer-logo': '#rhythm'
+    (
+      'times': 2,
+    ),
+);
+
+$layout-sizes: (
+  'page': 50rem,
+  'item-break': 40em,
+  'page-break': 50em,
+  'nav-break': 65em,
+);
+
+
+/// Color tema oscuro bg-header
+
+
+
+
+/// Creates a list of global breakpoints
+///
+/// Breakpoints
+/// @group colors
+/// @colors dark-theme
+
+/// Color tema oscuro bg-header
+$breakpoints: (
+  'phone': 576px,
+  'tablet': 768px,
+  'tablet-large': 991px,
+  'desktop': 1024px
+) !default;
+
+
+/// Creates a list of static expressions or media types
+$media-expressions: (
+  'screen': 'screen',
+  'print': 'print',
+  'handheld': 'handheld',
+  'landscape': '(orientation: landscape)',
+  'portrait': '(orientation: portrait)',
+  'retina2x': '(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)',
+  'retina3x': '(-webkit-min-device-pixel-ratio: 3), (min-resolution: 350dpi), (min-resolution: 3dppx)'
+) !default;
+
+@mixin breakpoint($point) {
+  @if $point == phone {
+    @media (max-width: 576px) {
+      @content;
+    }
+  }
+  @if $point == tablet {
+    @media only screen and (min-width: 576px) and (max-width: 992px) {
+      @content;
+    }
+  }
+  @if $point == desktop {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+//// @access public
+//// @author Esorcle
+@import 
+'../utils/variables',
+'../utils/mixins';
+
+* {
+    @include style-font-base($font-family-oswald, $font-base-size, $font-base-weigth, $base-line-height)
+}

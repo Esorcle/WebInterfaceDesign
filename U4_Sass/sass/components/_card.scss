@@ -1,0 +1,60 @@
+.card {
+    box-shadow: -1rem 0 3rem #000;
+    margin-bottom: 10px;
+    padding: 26px 30px;
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &:hover {
+        transform: translateY(-10px);
+        transition: all 0.5s ease;
+    }
+
+    div {
+        flex: 0 1 15%;
+    }
+
+    a {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 600;
+        font-style: italic;
+        margin-left: 4px;
+        background-color: lightgrey;
+        color: $bg-link;
+        border: 1px solid $bg-link;
+        padding: 4px 10px;
+        border-radius: 4px;
+        flex: 0 1 15%;
+        height: 50%;
+
+        &:hover {
+            color: #fff;
+            background-color: $bg-link;
+            transition: 0.5s;
+        }
+    }
+
+    h4 {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 600;
+        flex: 2 1 60%;
+
+    .mh-contact p {
+        display: none;
+    }
+}
+}
+
+@media screen and (max-width: 768px) {
+
+.card {
+
+    p{
+        display: none;
+    }
+}
+}
